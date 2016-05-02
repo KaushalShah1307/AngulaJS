@@ -1,2 +1,2 @@
-# AngulaJS
+# AngularJS
 Learning AngularJS and fundamentals.
