@@ -9,5 +9,15 @@
 </head>
 <body ng-controller="tutorialCtrl">
 
+    <h1> {{tutorialCtrlObject.title}}</h1>
+    <h3> {{tutorialCtrlObject.subTitle}} </h3>
+    <h3> {{message}} </h3>
+    <br>
+    <p> Addition: {{2 + 2}} </p>
+    <p> Name: {{"Kaushal" + " " + "Shah"}}</p>
+    <p> Binding: {{tutorialCtrlObject.binding}}</p>
+
+    <button ng-click="multiply()">Multiply</button>
+
 </body>
 </html>
