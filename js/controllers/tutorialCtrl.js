@@ -17,4 +17,8 @@ angular.module("tutorialCtrlModule", [])
         $scope.tutorialCtrlObject.binding *= 2;
     }
     
+    $scope.addition = function () {
+        $scope.tutorialCtrlObject.binding +=2;
+    }
+    
 }]);
