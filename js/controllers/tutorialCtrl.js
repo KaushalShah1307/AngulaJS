@@ -25,7 +25,7 @@ angular.module("tutorialCtrlModule", [])
     
 }])
 
-.directive ("myDirective", function () {
+.directive ("ksmyDirective", function () {
     return {
         restrict: "E",
         template: "<h1>This is a Directive</h1>"
