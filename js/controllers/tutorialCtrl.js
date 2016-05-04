@@ -10,6 +10,8 @@ angular.module("tutorialCtrlModule", [])
 
     $scope.tutorialCtrlObject.title = "My First Angular Page!";
     $scope.tutorialCtrlObject.subTitle = "I`m very excited.";
+    $scope.tutorialCtrlObject.fName = "Kaushal";
+    $scope.tutorialCtrlObject.lName = "Shah";
 
     $scope.tutorialCtrlObject.binding = 2;
 
@@ -21,4 +23,13 @@ angular.module("tutorialCtrlModule", [])
         $scope.tutorialCtrlObject.binding +=2;
     }
     
-}]);
+}])
+
+.directive ("myDirective", function () {
+    return {
+        restrict: "E",
+        template: "<h1>This is a Directive</h1>"
+    }
+
+
+})
