@@ -42,7 +42,7 @@
     <input ng-model="tutorialCtrlObject.urVal">
     <button ng-click="usdToRs()">Convert</button>
     <label>Your Conversion is:</label>
-    <input ng-model="tutorialCtrlObject.storeVal">
+    <input ng-model="tutorialCtrlObject.storeVal | currency: '#'">
 
 </body>
 </html>
