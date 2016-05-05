@@ -19,6 +19,9 @@ angular.module("tutorialCtrlModule", [])
                                            {name: "Chetana", country: "Australia"}
                                           ];
 
+    $scope.tutorialCtrlObject.urVal = "";
+    $scope.tutorialCtrlObject.storeVal = "";
+
     $scope.tutorialCtrlObject.binding = 2;
 
     $scope.multiply = function () {
@@ -27,6 +30,10 @@ angular.module("tutorialCtrlModule", [])
     
     $scope.addition = function () {
         $scope.tutorialCtrlObject.binding +=2;
+    }
+
+    $scope.usdToRs = function () {
+        $scope.tutorialCtrlObject.storeVal  = $scope.tutorialCtrlObject.urVal *= 66.67;
     }
 
     $scope.myUrl = $location.absUrl();
