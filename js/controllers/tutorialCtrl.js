@@ -13,6 +13,8 @@ angular.module("tutorialCtrlModule", [])
     $scope.tutorialCtrlObject.fName = "Kaushal";
     $scope.tutorialCtrlObject.lName = "Shah";
 
+    $scope.tutorialCtrlObject.manyNames = ["Kaushal", "Jainam", "Chetan", "Chetana"];
+
     $scope.tutorialCtrlObject.binding = 2;
 
     $scope.multiply = function () {
