@@ -3,7 +3,7 @@
  */
 angular.module("tutorialCtrlModule", [])
 
-.controller("tutorialCtrl", ["$scope", function ($scope) {
+.controller("tutorialCtrl", ["$scope", "$location", function ($scope, $location) {
 
     $scope.message = "Hello World!";
     $scope.tutorialCtrlObject = {};
@@ -22,6 +22,8 @@ angular.module("tutorialCtrlModule", [])
     $scope.addition = function () {
         $scope.tutorialCtrlObject.binding +=2;
     }
+
+    $scope.myUrl = $location.absUrl();
     
 }])
 
