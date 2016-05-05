@@ -34,9 +34,8 @@
     <ksmy-directive></ksmy-directive>
 
     <ul>
-
-        <li ng-repeat="x in tutorialCtrlObject.manyNames">Members of the SHAH Family :  {{x}}</li>
-
+        <li ng-repeat="x in tutorialCtrlObject.manyNames | orderBy: 'country'">Members of the SHAH Family :  {{x.name +
+            " , " + x.country}}</li>
     </ul>
 
 </body>

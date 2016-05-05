@@ -13,7 +13,11 @@ angular.module("tutorialCtrlModule", [])
     $scope.tutorialCtrlObject.fName = "Kaushal";
     $scope.tutorialCtrlObject.lName = "Shah";
 
-    $scope.tutorialCtrlObject.manyNames = ["Kaushal", "Jainam", "Chetan", "Chetana"];
+    $scope.tutorialCtrlObject.manyNames = [{name: "Kaushal", country: "USA"},
+                                           {name: "Jainam", country: "India"},
+                                           {name: "Chetan", country: "Denmark"},
+                                           {name: "Chetana", country: "Australia"}
+                                          ];
 
     $scope.tutorialCtrlObject.binding = 2;
 
