@@ -1,0 +1,20 @@
+    <label>First Name:</label>
+    <input ng-model="tutorialCtrlObject.fName">
+    <br>
+    <label>Last Name:</label>
+    <input ng-model="tutorialCtrlObject.lName">
+
+    <ksmy-directive></ksmy-directive>
+
+    <ul>
+        <li ng-repeat="x in tutorialCtrlObject.manyNames | orderBy: 'country'">Members of the SHAH Family :
+            {{x.name + " , " + x.country}}</li>
+    </ul>
+
+    <label>Enter a value in USD to convert in Rupees:</label>
+    <input ng-model="tutorialCtrlObject.urVal">
+    <button ng-click="usdToRs()">Convert</button>
+    <label>Your Conversion is:</label>
+    <input ng-model="tutorialCtrlObject.storeVal | currency: '#'">
+    <br>
+    <a href="index.html">Return to the Home Page</a>
